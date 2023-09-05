@@ -17,14 +17,15 @@ function calculate() {
             result = new Fraction(result).limitDenominator();
             document.getElementById('result').textContent = `${result.numerator}/${result.denominator}`;
         } else {
-            // Format the result to the thousandth place if selected
-            document.getElementById('result').textContent = result.toFixed(3);
+            // Display the result as is, without specific formatting
+            document.getElementById('result').textContent = result;
         }
     } catch (error) {
         // Handle any errors (e.g., division by zero) and display an error message
         document.getElementById('result').textContent = 'Error';
     }
 }
+
 
 // Function to calculate the square root of the displayed number
 function calculateSquareRoot() {
@@ -35,7 +36,7 @@ function calculateSquareRoot() {
         // Calculate the square root if the number is non-negative
         number = Math.sqrt(number);
         document.getElementById('display').value = number;
-        document.getElementById('result').textContent = number.toFixed(3);
+        document.getElementById('result').textContent = number;
     } else {
         // Display an error message for negative input
         document.getElementById('result').textContent = 'Invalid Input';
