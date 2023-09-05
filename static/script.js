@@ -13,13 +13,15 @@ function calculate() {
         const outputFormat = document.getElementById('output-format').value;
 
         if (outputFormat === 'fraction') {
-            // Convert the result to a fraction if selected
-            result = new Fraction(result).limitDenominator();
-            document.getElementById('result').textContent = `${result.numerator}/${result.denominator}`;
+            if (result.denominator === 0) {
+                document.getElementById('result').textContent = 'Division by Zero';
+            } else {
+                result = new Fraction(result).limitDenominator();
+                document.getElementById('result').textContent = `${result.numerator}/${result.denominator}`;
+            }
         } else {
-            // Display the result as is, without specific formatting
             document.getElementById('result').textContent = result;
-        }
+        }        
     } catch (error) {
         // Handle any errors (e.g., division by zero) and display an error message
         document.getElementById('result').textContent = 'Error';
