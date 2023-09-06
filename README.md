@@ -17,10 +17,6 @@ A simple calculator web application written in Python using the Flask framework 
 - Math.js (JavaScript library for mathematical operations)
 
 
-## Getting Started
-
-These instructions will help you set up and run the calculator app on your local machine.
-
 ### Prerequisites
 
 - Python 3.11.4
