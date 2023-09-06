@@ -28,7 +28,7 @@ These instructions will help you set up and run the calculator app on your local
    ```
 
 ## Screenshot
-![Calculator](/screenshot/calculator-screenshot.png)
+![Calculator](/screenshot/calculator-screenshot.png){:height="200px" width="300px"}
 
 
    
