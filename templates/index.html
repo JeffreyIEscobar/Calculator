@@ -9,14 +9,7 @@
 <body>
     <div class="calculator">
         <input type="text" id="display" readonly>
-        
-        <!-- Add a dropdown menu to select the output format -->
-        <select id="output-format">
-            <option value="decimal">Decimal </option>
-            <option value="fraction">Fraction</option>
-        </select>
 
-        <!-- Update the result display to show the selected format -->
         <div id="result"></div>
 
         <div class="buttons">
@@ -31,12 +24,14 @@
             <button onclick="addToDisplay('1')">1</button>
             <button onclick="addToDisplay('2')">2</button>
             <button onclick="addToDisplay('3')">3</button>
-            <button onclick="addToDisplay('*')">*</button>
+            <button onclick="addToDisplay('×')">×</button>
             <button onclick="addToDisplay('0')">0</button>
             <button onclick="addToDisplay('.')">.</button>
             <button onclick="calculate()">=</button>
-            <button onclick="addToDisplay('/')">/</button>
+            <button onclick="addToDisplay('÷')">÷</button>
             <button onclick="calculateSquareRoot()">√</button>
+            <button onclick="square()">x²</button>
+            <button onclick="cube()">x³</button>
             <button onclick="clearDisplay()">C</button>
         </div>
     </div>
